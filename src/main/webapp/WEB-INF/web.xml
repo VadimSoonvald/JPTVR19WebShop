@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            90
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <jsp-config>
+        <jsp-property-group>
+            <display-name>template1</display-name>
+            <url-pattern>/buyProduct.jsp</url-pattern>
+            <url-pattern>/editBuyer.jsp</url-pattern>
+            <url-pattern>/editProduct.jsp</url-pattern>
+            <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/listBuyers.jsp</url-pattern>
+            <url-pattern>/listProducts.jsp</url-pattern>
+            <url-pattern>/loginForm.jsp</url-pattern>
+            <url-pattern>/newProduct.jsp</url-pattern>
+            <url-pattern>/registrationForm.jsp</url-pattern>
+            <url-pattern>/showBoughtProducts.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+            <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>

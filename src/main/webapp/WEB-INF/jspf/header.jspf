@@ -1,0 +1,47 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <title>SoonvaldPizzeria | магазин продажи пицц</title>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.jsp" class="logo">SoonvaldPizzeria | магазин продажи пицц</a>
+    <div class="dropdown-menu">
+        <div class="dropdown-product">
+            <button class="dropbtn-product">Пиццы</button>
+            <div class="dropdown-content-product">
+                <a href="addProduct">Добавить пиццу</a>
+                <a href="editProductForm">Изменить пиццу</a>
+                <a href="listProducts">Список имеющихся пицц</a>
+                <a href="buyProductForm">Купить пиццу</a>
+                <a href="boughtProducts">Список купленных пицц</a>
+            </div>
+        </div>
+        <div class="dropdown-buyer">
+            <button class="dropbtn-buyer">Пользователь</button>
+            <div class="dropdown-content-buyer">
+                <a href="registrationForm">Добавить пользователя</a>
+                <a href="editBuyerForm">Изменить пользователя</a>
+                <a href="listBuyers">Список пользователей</a>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <c:if test="${not empty user}">
+            <a href="logout">Выйти</a>
+            <a href="loginForm">Вы вошли в систему</a>
+        </c:if>
+        <c:if test="${empty user}">
+            <a href="logout" id="loginInfo"></a>
+            <a href="loginForm" id="logoutInfo">Войти</a>
+        </c:if>
+
+    </div>
+</div>
+
+</body>

@@ -1,0 +1,126 @@
+
+.header {
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+}
+
+.logo {
+    color: white;
+    margin: 15px;
+}
+
+.dropdown-menu {
+    margin-left: 20px;
+    display: flex;
+}
+
+.dropbtn-product {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 25px;
+    color: white;
+    padding: 22px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-product {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-product {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-product a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-product a:hover {background-color: #d1d1d1}
+
+.dropdown-product:hover .dropdown-content-product {
+    display: block;
+}
+
+.dropdown-product:hover .dropbtn-product {
+    background-color: #598eff;
+}
+
+.dropbtn-buyer {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 25px;
+    color: white;
+    padding: 22px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-buyer {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-buyer {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-buyer a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-buyer a:hover {background-color: #d1d1d1}
+
+.dropdown-buyer:hover .dropdown-content-buyer {
+    display: block;
+}
+
+.dropdown-buyer:hover .dropbtn-buyer {
+    background-color: #598eff;
+}
+
+.login {
+    margin-left: 45%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 25px;
+    padding: 22px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+#loginInfo:hover,
+#logoutInfo:hover {
+    background-color: #598eff;
+}
